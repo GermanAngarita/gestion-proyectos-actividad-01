@@ -1,12 +1,14 @@
 class A {
-    constructor( foo, bar) {
+    constructor( foo, bar, lorem) {
         this.foo = foo;
-        this.bar = bar
+        this.bar = bar;
+        this.lorem = lorem;
     }
 
     print(){
         console.log("foo: ", this.foo);
         console.log("bar: ", this.bar);
+        console.log("lorem: ", this.lorem);
     }
 }
 
@@ -28,7 +30,7 @@ class B {
     }
 }
 
-const a = new A("foo", "bar");
+const a = new A("foo", "bar", "lorem");
 
 const c = new C();
 
