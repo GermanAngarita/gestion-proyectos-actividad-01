@@ -10,6 +10,15 @@ class A {
     }
 }
 
-const a = new A("foo", "bar");
-a.print();
+class B {
+    constructor(){}
+    print(){
+        console.log("Clase B")
+    }
+}
 
+const a = new A("foo", "bar");
+const b = new B();
+
+a.print();
+b.print();
