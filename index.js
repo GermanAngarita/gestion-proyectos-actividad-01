@@ -10,6 +10,16 @@ class A {
     }
 }
 
-const a = new A("foo", "bar");
-a.print();
+class C {
+    constructor(){}
 
+    print(){
+        console.log("Clase C")
+    }
+}
+
+const a = new A("foo", "bar");
+const c = new C();
+
+a.print();
+c.print();
